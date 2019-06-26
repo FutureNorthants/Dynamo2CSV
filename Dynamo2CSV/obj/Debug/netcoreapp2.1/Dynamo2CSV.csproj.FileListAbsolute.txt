@@ -1,0 +1,11 @@
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\bin\Debug\netcoreapp2.1\Dynamo2CSV.deps.json
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\bin\Debug\netcoreapp2.1\Dynamo2CSV.runtimeconfig.json
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\bin\Debug\netcoreapp2.1\Dynamo2CSV.runtimeconfig.dev.json
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\bin\Debug\netcoreapp2.1\Dynamo2CSV.dll
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.csprojAssemblyReference.cache
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.csproj.CoreCompileInputs.cache
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.AssemblyInfoInputs.cache
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.AssemblyInfo.cs
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\bin\Debug\netcoreapp2.1\Dynamo2CSV.pdb
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.dll
+C:\Users\Kevin White\source\repos\Dynamo2CSV\Dynamo2CSV\obj\Debug\netcoreapp2.1\Dynamo2CSV.pdb
