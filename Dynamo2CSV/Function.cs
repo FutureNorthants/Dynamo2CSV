@@ -23,9 +23,17 @@ namespace Dynamo2CSV
             clientConfig.RegionEndpoint = RegionEndpoint.EUWest2;
             AmazonDynamoDBClient client = new AmazonDynamoDBClient(clientConfig);
             s3Client = new AmazonS3Client(RegionEndpoint.EUWest2);
+            DateTime tomorrow = DateTime.Now.AddDays(1);
+            String selectionDate = tomorrow.ToString("yyyy-MM-dd");
+            String fileDate = tomorrow.ToString("yyyyMMdd");
+            context.Logger.LogLine("Extracting data for " + selectionDate);
             ScanRequest request = new ScanRequest
             {
                 TableName = tableName,
+                ExpressionAttributeValues = new Dictionary<string, AttributeValue> {
+                   {":val", new AttributeValue { S = selectionDate }}
+                },
+                FilterExpression = "CollectionDate = :val"
             };
             Task<ScanResponse> response = client.ScanAsync(request);
             var result = response.Result.Count;
@@ -36,7 +44,7 @@ namespace Dynamo2CSV
                 context.Logger.LogLine("Case " + item["Reference"].S.ToString());
                 fileContents += item["Reference"].S.ToString() + "," + "\r";
             }
-            Write2S3Async(context, "cxm2veoliafiles", "myfile", fileContents).Wait();
+            Write2S3Async(context, "cxm2veoliafiles", tableName + "-" + fileDate + ".csv", fileContents).Wait();
             context.Logger.LogLine("Process Finished");
             return result.ToString();
         }
